@@ -3,6 +3,15 @@ import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 
 import { icons } from "../constants";
 
+interface FormFieldProps {
+  title: string;
+  value: string;
+  placeholder?: string;
+  handleChangeText: (text: string) => void;
+  otherStyles?: string;
+  [key: string]: any; // For additional props spread via ...props
+}
+
 const FormField = ({
   title,
   value,
@@ -10,7 +19,7 @@ const FormField = ({
   handleChangeText,
   otherStyles,
   ...props
-}) => {
+}: FormFieldProps) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -19,7 +28,7 @@ const FormField = ({
 
       <View className="w-full h-16 px-4 bg-black-100 rounded-2xl border-2 border-black-200 focus:border-secondary flex flex-row items-center">
         <TextInput
-          className="flex-1 text-white font-psemibold text-base"
+          className="flex-1 text-white font-psemibold text-base outline-none"
           value={value}
           placeholder={placeholder}
           placeholderTextColor="#7B7B8B"
@@ -33,6 +42,10 @@ const FormField = ({
             <Image
               source={!showPassword ? icons.eye : icons.eyeHide}
               className="w-6 h-6"
+              style={{
+                height: 24,
+                width: 24,
+              }}
               resizeMode="contain"
             />
           </TouchableOpacity>
