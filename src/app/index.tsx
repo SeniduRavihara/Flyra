@@ -19,6 +19,8 @@ const Welcome = () => {
       <ScrollView
         contentContainerStyle={{
           height: "100%",
+          marginBottom: 50,
+          marginTop: 50,
         }}
       >
         <View className="w-full flex justify-center items-center h-full px-4">
@@ -32,6 +34,9 @@ const Welcome = () => {
             source={images.cards}
             className="max-w-[380px] w-full h-[298px]"
             resizeMode="contain"
+            style={{
+              height: 298,
+            }}
           />
 
           <View className="relative mt-5">
@@ -45,6 +50,9 @@ const Welcome = () => {
               source={images.path}
               className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
               resizeMode="contain"
+              style={{
+                height: 15,
+              }}
             />
           </View>
 
