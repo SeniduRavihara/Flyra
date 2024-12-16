@@ -16,6 +16,17 @@
       ]
     ],
     "name": "Flyra",
-    "slug": "Flyra"
+    "slug": "Flyra",
+    "extra": {
+      "router": {
+        "origin": "https://n"
+      },
+      "eas": {
+        "projectId": "a4c23bc5-5e5a-4a16-8578-aca7e2ba33e7"
+      }
+    },
+    "android": {
+      "package": "com.senidu.Flyra"
+    }
   }
 }

@@ -11,11 +11,11 @@ import {
 export const appwriteConfig = {
   endpoint: "https://cloud.appwrite.io/v1",
   platform: "com.jsm.sora",
-  projectId: "660d0e00da0472f3ad52",
-  storageId: "660d0e59e293896f1eaf",
-  databaseId: "660d14b2b809e838959a",
-  userCollectionId: "660d14c0e8ae0ea842b8",
-  videoCollectionId: "660d157fcb8675efe308",
+  projectId: "667e3a56000ff3ad49a0",
+  storageId: "667e4201001d73fb0829",
+  databaseId: "667e3cd400132f42474f",
+  userCollectionId: "667e3cf2002a4ba07c54",
+  videoCollectionId: "667e3d0f003b3a6cb0a8",
 };
 
 const client = new Client();
